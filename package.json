@@ -1,0 +1,20 @@
+{
+  "name": "angular-graphql-todo",
+  "version": "0.0.0",
+  "scripts": {
+    "server-dev": "nodemon server/index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "apollo-server-express": "^2.1.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "graphql": "^14.0.2",
+    "http": "0.0.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
