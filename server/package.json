@@ -2,7 +2,7 @@
   "name": "angular-graphql-todo",
   "version": "0.0.0",
   "scripts": {
-    "server-dev": "nodemon server/index.js"
+    "server-dev": "nodemon index.js"
   },
   "private": true,
   "dependencies": {
