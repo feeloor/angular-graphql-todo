@@ -22,6 +22,12 @@ export const AddTodo = gql`
   }
 `;
 
+export const RemoveTodo = gql`
+  mutation RemoveTodo($id: ID!) {
+    removeTodo(id: $id)
+  }
+`;
+
 export interface Todo {
   id: number;
   name: string;

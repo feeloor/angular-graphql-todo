@@ -7,10 +7,14 @@ import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TodoListComponent } from '@app/todo-list/todo-list.component';
+import { TodoAddComponent } from '@app/todo-add/todo-add.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoListComponent,
+    TodoAddComponent
   ],
   imports: [
     BrowserModule,
