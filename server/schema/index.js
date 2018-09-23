@@ -23,6 +23,7 @@ type Query {
 type Mutation {
   addTodo(name: String!, description: String!, completed: Boolean!): Todo
   updateTodo(id: ID!, name: String, description: String!, completed: Boolean): Boolean
+  removeTodo(id: ID!): Boolean
 }
 `;
 
@@ -51,7 +52,8 @@ const resolvers = {
       description,
       completed
     }, { where: { id }, returning: true })
-    .then((res) => res[1] === 1)
+    .then((res) => res[1] === 1),
+    removeTodo: (_, { id }) => Todo.destroy({ where: { id }})
   }
 };
 
